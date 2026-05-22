@@ -4,7 +4,7 @@ plugins {
 //    id 'kotlin-parcelize'
 //    //id 'kotlin-kapt'
 //    id 'com.google.devtools.ksp'
-//    id "com.google.gms.google-services"
+//    // id "com.google.gms.google-services"
 
     alias libs.plugins.android.application
     alias libs.plugins.kotlin.android
