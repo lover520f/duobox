@@ -102,25 +102,19 @@ android {
     }
     //noinspection GrDeprecatedAPIUsage
     flavorDimensions = ['mode']
-    productFlavors {
-        app {
-            dimension "mode"
-            applicationIdSuffix ".release"
-            manifestPlaceholders.put("APP_CHANNEL_VALUE", "app")
-        }
-        appA {
-            dimension "mode"
-            applicationIdSuffix ".appA"
-            manifestPlaceholders.put("APP_CHANNEL_VALUE", "appA")
-        }
-    }
-
-    android.applicationVariants.configureEach { variant ->
-        variant.outputs.configureEach {
-            def flavor = variant.productFlavors[0].name
-            outputFileName = "${name}_${flavor}_${defaultConfig.versionName}.apk"
-        }
-    }
+    // 禁用 productFlavors，直接使用默認配置
+    // productFlavors {
+    //     app {
+    //         dimension "mode"
+    //         applicationIdSuffix ".release"
+    //         manifestPlaceholders.put("APP_CHANNEL_VALUE", "app")
+    //     }
+    //     appA {
+    //         dimension "mode"
+    //         applicationIdSuffix ".appA"
+    //         manifestPlaceholders.put("APP_CHANNEL_VALUE", "appA")
+    //     }
+    // }
 
 
     room {
