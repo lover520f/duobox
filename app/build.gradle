@@ -105,11 +105,12 @@ android {
     productFlavors {
         app {
             dimension "mode"
+            applicationIdSuffix ".release"
             manifestPlaceholders.put("APP_CHANNEL_VALUE", "app")
         }
         appA {
             dimension "mode"
-            applicationIdSuffix ".a"
+            applicationIdSuffix ".appA"
             manifestPlaceholders.put("APP_CHANNEL_VALUE", "appA")
         }
     }
