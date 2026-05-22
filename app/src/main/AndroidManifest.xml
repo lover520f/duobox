@@ -523,7 +523,7 @@
 
         <meta-data
             android:name="channel"
-            android:value="${APP_CHANNEL_VALUE}" />
+            android:value="duobox" />
     </application>
 
     <queries>
