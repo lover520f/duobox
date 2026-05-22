@@ -9,22 +9,7 @@
       "client_info": {
         "mobile_sdk_app_id": "1:000000000000:android:0000000000000000",
         "android_client_info": {
-          "package_name": "io.duobox.app.release"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "placeholder"
-        }
-      ],
-      "services": {}
-    },
-    {
-      "client_info": {
-        "mobile_sdk_app_id": "1:000000000000:android:0000000000000000",
-        "android_client_info": {
-          "package_name": "io.duobox.app.appA"
+          "package_name": "io.duobox.app"
         }
       },
       "oauth_client": [],
